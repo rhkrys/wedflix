@@ -53,8 +53,35 @@ export default function Page() {
         </div>
       </section>
 
+      {/* ===== FEATURED VIDEO ===== */}
+      <section className="wf-section" id="trailer">
+        <div className="container">
+          <div className="text-center mb-5">
+            <span className="wf-eyebrow">The Trailer</span>
+            <h2 className="wf-title">
+              Watch the <em>Invitation</em>
+            </h2>
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-lg-10">
+              <div className="wf-video">
+                <video
+                  controls
+                  playsInline
+                  preload="metadata"
+                  poster="assets/videos/invitation-poster.jpg"
+                >
+                  <source src="assets/videos/invitation.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ===== OUR STORY ===== */}
-      <section className="wf-section" id="story">
+      <section className="wf-section alt" id="story">
         <div className="container">
           <div className="text-center mb-5">
             <span className="wf-eyebrow">Now Streaming</span>
@@ -71,7 +98,7 @@ export default function Page() {
       </section>
 
       {/* ===== EVENT DETAILS + MAP ===== */}
-      <section className="wf-section alt" id="details">
+      <section className="wf-section" id="details">
         <div className="container">
           <div className="text-center mb-5">
             <span className="wf-eyebrow">The Main Event</span>
@@ -140,7 +167,7 @@ export default function Page() {
       </section>
 
       {/* ===== REGISTRY ===== */}
-      <section className="wf-section" id="registry">
+      <section className="wf-section alt" id="registry">
         <div className="container">
           <div className="text-center mb-5">
             <span className="wf-eyebrow">With Love</span>
@@ -188,7 +215,7 @@ export default function Page() {
       </section>
 
       {/* ===== FAQ ===== */}
-      <section className="wf-section alt" id="faq">
+      <section className="wf-section" id="faq">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8">
@@ -205,7 +232,7 @@ export default function Page() {
       </section>
 
       {/* ===== RSVP ===== */}
-      <section className="wf-section" id="rsvp">
+      <section className="wf-section alt" id="rsvp">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8">

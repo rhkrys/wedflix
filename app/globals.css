@@ -198,6 +198,21 @@
   }
 }
 
+/* ---- Featured video ---- */
+.wf-video {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #26262e;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+  background: #000;
+  line-height: 0;
+}
+.wf-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ---- Generic dark sections ---- */
 .wf-section {
   background: var(--wf-dark);

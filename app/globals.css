@@ -823,3 +823,20 @@ a.wf-registry-card:hover {
   margin-top: 14px;
   font-size: 0.85rem;
 }
+.wf-ending__link {
+  display: inline-block;
+  margin-top: 22px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  padding: 10px 22px;
+  transition: 0.2s;
+}
+.wf-ending__link:hover {
+  background: var(--wf-red);
+  border-color: var(--wf-red);
+}

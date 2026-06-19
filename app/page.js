@@ -3,12 +3,16 @@ import Header from "@/components/wedding/Header";
 import Countdown from "@/components/wedding/Countdown";
 import Episodes from "@/components/wedding/Episodes";
 import Faq from "@/components/wedding/Faq";
-import Rsvp from "@/components/wedding/Rsvp";
 
 const MAP_SRC =
   "https://www.google.com/maps?q=The+Birchwood+Manor+111+N+Jefferson+Rd+Whippany+NJ+07981&output=embed";
 const MAP_LINK =
   "https://www.google.com/maps/search/?api=1&query=The+Birchwood+Manor+111+N+Jefferson+Rd+Whippany+NJ+07981";
+
+const WITHJOY = "https://withjoy.com/justchaz";
+const WITHJOY_RSVP = "https://withjoy.com/justchaz/rsvp";
+const WITHJOY_FAQ = "https://withjoy.com/justchaz/faq";
+const WITHJOY_REGISTRY = "https://withjoy.com/justchaz/registry";
 
 export default function Page() {
   return (
@@ -45,33 +49,11 @@ export default function Page() {
                   <i className="fas fa-play" /> RSVP Now
                 </span>
               </a>
-              <a href="#episodes" className="theme-btn">
+              <a href="#details" className="theme-btn">
                 <span>
-                  Our Story <i className="fas fa-chevron-right" />
+                  The Details <i className="fas fa-chevron-right" />
                 </span>
               </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== EPISODES ===== */}
-      <section className="wf-section" id="episodes">
-        <div className="container">
-          <div className="text-center mb-5">
-            <span className="wf-eyebrow">Now Streaming</span>
-            <h2 className="wf-title">
-              The <em>Episodes</em>
-            </h2>
-            <p className="wf-lead mx-auto mt-3">
-              Laughter, prayer, and joy beautifully encapsulate this love story of two soon to
-              become three. Press play on what&rsquo;s released — the rest unlocks as our story
-              unfolds.
-            </p>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-lg-9">
-              <Episodes />
             </div>
           </div>
         </div>
@@ -163,7 +145,7 @@ export default function Page() {
             <div className="col-md-4">
               <a
                 className="wf-registry-card"
-                href="https://withjoy.com/justchaz/registry"
+                href={WITHJOY_REGISTRY}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -218,6 +200,13 @@ export default function Page() {
                 </h2>
               </div>
               <Faq />
+              <div className="text-center mt-4">
+                <a href={WITHJOY_FAQ} target="_blank" rel="noopener noreferrer" className="theme-btn">
+                  <span>
+                    See All FAQs <i className="fas fa-chevron-right" />
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -227,8 +216,8 @@ export default function Page() {
       <section className="wf-section alt" id="rsvp">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-8">
-              <div className="text-center mb-5">
+            <div className="col-lg-8 text-center">
+              <div className="mb-4">
                 <h2 className="wf-title">
                   Reserve Your <em>Seat</em>
                 </h2>
@@ -237,7 +226,38 @@ export default function Page() {
                   unable to attend. Kindly respond by August 8, 2026.
                 </p>
               </div>
-              <Rsvp />
+              <a
+                href={WITHJOY_RSVP}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="theme-btn wf-white"
+              >
+                <span>
+                  <i className="fas fa-play" /> RSVP on Our Website
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== EPISODES (extra) ===== */}
+      <section className="wf-section" id="episodes">
+        <div className="container">
+          <div className="text-center mb-5">
+            <span className="wf-eyebrow">Now Streaming</span>
+            <h2 className="wf-title">
+              The <em>Episodes</em>
+            </h2>
+            <p className="wf-lead mx-auto mt-3">
+              Laughter, prayer, and joy beautifully encapsulate this love story of two soon to
+              become three. Press play on what&rsquo;s released — the rest unlocks as our story
+              unfolds.
+            </p>
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-lg-9">
+              <Episodes />
             </div>
           </div>
         </div>
@@ -247,6 +267,9 @@ export default function Page() {
       <footer className="wf-ending">
         <h2>IT&rsquo;S A JUSTCHAZ WEDDING</h2>
         <p>Hope to see you soon!</p>
+        <a className="wf-ending__link" href={WITHJOY} target="_blank" rel="noopener noreferrer">
+          Visit our wedding website &rsaquo;
+        </a>
       </footer>
     </main>
   );

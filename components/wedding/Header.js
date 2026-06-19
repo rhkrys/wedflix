@@ -16,11 +16,11 @@ const Header = () => {
         WEDFLIX
       </a>
       <nav className="wf-nav">
-        <a href="#episodes">Episodes</a>
         <a href="#details">Details</a>
         <a href="#registry">Registry</a>
         <a href="#faq">FAQ</a>
         <a href="#rsvp">RSVP</a>
+        <a href="#episodes">Episodes</a>
       </nav>
     </header>
   );

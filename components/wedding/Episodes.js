@@ -5,14 +5,6 @@ import { useEffect, useState } from "react";
 const EPISODES = [
   {
     n: 1,
-    title: "The Formal Invitation",
-    desc: "You're formally invited! Press play for the official JustChaz wedding invitation.",
-    runtime: "1m 6s",
-    poster: "assets/videos/invitation-poster.jpg",
-    src: "assets/videos/invitation.mp4",
-  },
-  {
-    n: 2,
     title: "I Love Chaz",
     desc: "Our engagement — the moment forever began. A little love story, on repeat.",
     runtime: "0m 20s",
@@ -20,7 +12,7 @@ const EPISODES = [
     src: "assets/videos/engagement.mp4",
   },
   {
-    n: 3,
+    n: 2,
     title: "The Rehearsal Dinner",
     desc: "The night before forever. Premieres September 2026.",
     runtime: "Coming soon",
@@ -28,7 +20,7 @@ const EPISODES = [
     locked: true,
   },
   {
-    n: 4,
+    n: 3,
     title: "The Big Day",
     desc: "I do. The main event — premieres September 12, 2026.",
     runtime: "Coming soon",
@@ -36,7 +28,7 @@ const EPISODES = [
     locked: true,
   },
   {
-    n: 5,
+    n: 4,
     title: "The Reception",
     desc: "First dance, last call, and everything in between.",
     runtime: "Coming soon",
@@ -44,7 +36,7 @@ const EPISODES = [
     locked: true,
   },
   {
-    n: 6,
+    n: 5,
     title: "Happily Ever After",
     desc: "The honeymoon and beyond. To be continued…",
     runtime: "Coming soon",

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&family=Great+Vibes&family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Serif+Display:ital,wdth,wght@0,62.5..100,400;0,62.5..100,600;0,62.5..100,700;1,62.5..100,400;1,62.5..100,600&family=Work+Sans:wght@400;500;600&display=swap");
 
 /* ============================================================
    WEDFLIX — wedding customisations layered on the Netband theme
@@ -6,6 +6,11 @@
 :root {
   --wf-red: #d6111e;
   --wf-dark: #0d0d10;
+}
+
+/* Base body copy — Montserrat (matches the brand sheet) */
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ---- WEDFLIX intro animation ---- */
@@ -107,7 +112,8 @@
   margin-bottom: 14px;
 }
 .wf-profiles__title {
-  font-family: "Playfair Display", serif;
+  font-family: "Noto Serif Display", serif;
+  font-stretch: 62.5%;
   font-weight: 500;
   font-size: clamp(1.6rem, 5vw, 2.6rem);
   margin-bottom: 48px;
@@ -165,11 +171,14 @@
 
 /* ---- Elegant display type for headings ---- */
 .wf-script {
-  font-family: "Great Vibes", cursive;
+  font-family: "Noto Serif Display", serif;
+  font-stretch: 62.5%;
+  font-style: italic;
   font-weight: 400;
 }
 .wf-serif {
-  font-family: "Playfair Display", serif;
+  font-family: "Noto Serif Display", serif;
+  font-stretch: 62.5%;
 }
 
 /* ---- Simple sticky site header ---- */
@@ -204,6 +213,7 @@
   align-items: center;
 }
 .wf-nav a {
+  font-family: "Work Sans", sans-serif;
   color: #fff;
   text-decoration: none;
   font-size: 0.95rem;
@@ -282,18 +292,20 @@
 }
 .wf-hero h1 {
   color: #fff;
-  font-family: "Playfair Display", serif;
+  font-family: "Noto Serif Display", serif;
+  font-stretch: 62.5%;
   font-weight: 700;
   font-size: clamp(2.8rem, 8vw, 6rem);
   line-height: 0.95;
   margin: 0 0 6px;
 }
 .wf-hero h1 em {
-  font-family: "Great Vibes", cursive;
-  font-style: normal;
+  font-family: "Noto Serif Display", serif;
+  font-stretch: 62.5%;
+  font-style: italic;
   font-weight: 400;
   color: #fff;
-  font-size: 1.05em;
+  font-size: 1em;
 }
 .wf-hero__meta {
   letter-spacing: 0.18em;
@@ -439,7 +451,8 @@
 }
 .wf-ep__head h4 {
   color: #fff;
-  font-family: "Playfair Display", serif;
+  font-family: "Noto Serif Display", serif;
+  font-stretch: 62.5%;
   font-size: 1.15rem;
   margin: 0;
 }
@@ -531,7 +544,8 @@
   margin-bottom: 12px;
 }
 .wf-title {
-  font-family: "Playfair Display", serif;
+  font-family: "Noto Serif Display", serif;
+  font-stretch: 62.5%;
   font-weight: 700;
   color: #fff;
   font-size: clamp(2rem, 5vw, 3.2rem);
@@ -539,8 +553,9 @@
   margin: 0;
 }
 .wf-title em {
-  font-family: "Great Vibes", cursive;
-  font-style: normal;
+  font-family: "Noto Serif Display", serif;
+  font-stretch: 62.5%;
+  font-style: italic;
   color: var(--wf-red);
 }
 .wf-lead {
@@ -592,7 +607,8 @@
 }
 .wf-card__body h4 {
   color: #fff;
-  font-family: "Playfair Display", serif;
+  font-family: "Noto Serif Display", serif;
+  font-stretch: 62.5%;
   font-size: 1.25rem;
   margin: 0 0 6px;
 }
@@ -623,7 +639,8 @@
 }
 .wf-detail-card h4 {
   color: #fff;
-  font-family: "Playfair Display", serif;
+  font-family: "Noto Serif Display", serif;
+  font-stretch: 62.5%;
   margin-bottom: 8px;
 }
 .wf-detail-card p {
@@ -657,7 +674,8 @@
   background: none;
   border: none;
   color: #fff;
-  font-family: "Playfair Display", serif;
+  font-family: "Noto Serif Display", serif;
+  font-stretch: 62.5%;
   font-size: 1.1rem;
   padding: 20px 24px;
   cursor: pointer;
@@ -712,7 +730,8 @@ a.wf-registry-card:hover {
 }
 .wf-registry-card h4 {
   color: #fff;
-  font-family: "Playfair Display", serif;
+  font-family: "Noto Serif Display", serif;
+  font-stretch: 62.5%;
 }
 .wf-registry-card p {
   color: #b9b9bf;
@@ -767,6 +786,10 @@ a.wf-registry-card:hover {
 }
 
 /* ---- Theme button override to the WEDFLIX red & a white variant ---- */
+.theme-btn,
+.theme-btn span {
+  font-family: "DM Sans", sans-serif;
+}
 .theme-btn {
   background: var(--wf-red);
   cursor: pointer;

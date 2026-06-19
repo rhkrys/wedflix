@@ -229,7 +229,6 @@ export default function Page() {
           <div className="row justify-content-center">
             <div className="col-lg-8">
               <div className="text-center mb-5">
-                <span className="wf-eyebrow">Season 4 &middot; Finale</span>
                 <h2 className="wf-title">
                   Reserve Your <em>Seat</em>
                 </h2>

@@ -26,7 +26,7 @@ export default function Page() {
           playsInline
           poster="assets/img/wedding/home.jpg"
         >
-          <source src="assets/videos/engagement.mp4" type="video/mp4" />
+          <source src="assets/videos/the-before.mp4" type="video/mp4" />
         </video>
         <div className="wf-hero__scrim" />
         <div className="container">

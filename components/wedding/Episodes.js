@@ -7,9 +7,9 @@ const EPISODES = [
     n: 1,
     title: "The Before",
     desc: "Where it all began.",
-    runtime: "0m 20s",
-    poster: "assets/videos/the-before-poster.jpg",
-    src: "assets/videos/the-before.mp4",
+    runtime: "Coming soon",
+    poster: "assets/img/wedding/couple-4.jpg",
+    locked: true,
   },
   {
     n: 2,
@@ -22,10 +22,10 @@ const EPISODES = [
   {
     n: 3,
     title: "The Trailer",
-    desc: "Our engagement — the moment forever began. A little love story, on repeat.",
-    runtime: "Coming soon",
-    poster: "assets/img/wedding/couple-4.jpg",
-    locked: true,
+    desc: "A little preview of our story — I Love Chaz.",
+    runtime: "0m 20s",
+    poster: "assets/videos/the-before-poster.jpg",
+    src: "assets/videos/the-before.mp4",
   },
   {
     n: 4,

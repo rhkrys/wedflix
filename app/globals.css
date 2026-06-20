@@ -135,10 +135,15 @@ body {
   stroke: #1a1a1a;
 }
 .wf-profile__avatar--green {
-  background: linear-gradient(145deg, #3ddc84, #16a34a);
+  background: #122620;
+}
+/* Light smile so it reads on the dark green */
+.wf-profile__avatar--green svg {
+  fill: #c8a47b;
+  stroke: #c8a47b;
 }
 .wf-profile__avatar--yellow {
-  background: linear-gradient(145deg, #ffd84d, #f5a623);
+  background: #c8a47b;
 }
 .wf-profile__name {
   font-size: 0.95rem;

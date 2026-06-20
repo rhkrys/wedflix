@@ -523,6 +523,30 @@ body {
   letter-spacing: 0.04em;
 }
 
+/* ---- Social wall ---- */
+.wf-social {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.wf-social__placeholder {
+  text-align: center;
+  border: 1px dashed #3a3a44;
+  border-radius: 16px;
+  padding: clamp(36px, 7vw, 70px) 24px;
+  background: #16161b;
+}
+.wf-social__placeholder > i {
+  font-size: 2.6rem;
+  color: var(--wf-red);
+  margin-bottom: 16px;
+  display: block;
+}
+.wf-social__placeholder p {
+  color: #b9b9bf;
+  max-width: 46ch;
+  margin: 0 auto 22px;
+}
+
 /* ---- Generic dark sections ---- */
 .wf-section {
   background: var(--wf-dark);

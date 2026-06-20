@@ -146,7 +146,8 @@ export default function Page() {
               The <em>Episodes</em>
             </h2>
             <p className="wf-lead mx-auto mt-3">
-              Press play on what&rsquo;s released — the rest unlocks as our story unfolds.
+              Press play on what&rsquo;s released —<br className="d-none d-md-block" /> the rest
+              unlocks as our story unfolds.
             </p>
           </div>
           <div className="row justify-content-center">

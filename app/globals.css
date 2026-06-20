@@ -644,6 +644,32 @@ body {
   color: #b9b9bf;
   margin: 0;
 }
+button.wf-detail-card {
+  width: 100%;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+button.wf-detail-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--wf-red);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.5);
+}
+.wf-detail-card__cta {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--wf-red);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.wf-detail-card__cta i {
+  margin-right: 6px;
+}
+
 .wf-map {
   border-radius: 14px;
   overflow: hidden;

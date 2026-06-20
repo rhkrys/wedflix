@@ -3,11 +3,7 @@ import Header from "@/components/wedding/Header";
 import Countdown from "@/components/wedding/Countdown";
 import Episodes from "@/components/wedding/Episodes";
 import Faq from "@/components/wedding/Faq";
-
-const MAP_SRC =
-  "https://www.google.com/maps?q=The+Birchwood+Manor+111+N+Jefferson+Rd+Whippany+NJ+07981&output=embed";
-const MAP_LINK =
-  "https://www.google.com/maps/search/?api=1&query=The+Birchwood+Manor+111+N+Jefferson+Rd+Whippany+NJ+07981";
+import VenueMap from "@/components/wedding/VenueMap";
 
 const WITHJOY = "https://withjoy.com/justchaz";
 const WITHJOY_RSVP = "https://withjoy.com/justchaz/rsvp";
@@ -96,17 +92,7 @@ export default function Page() {
               </div>
             </div>
             <div className="col-lg-4">
-              <div className="wf-detail-card">
-                <div className="ic">
-                  <i className="fas fa-map-marker-alt" />
-                </div>
-                <h4>Venue</h4>
-                <p>
-                  The Birchwood Manor
-                  <br />
-                  111 N Jefferson Rd, Whippany, NJ 07981
-                </p>
-              </div>
+              <VenueMap />
             </div>
             <div className="col-lg-4">
               <div className="wf-detail-card">
@@ -115,26 +101,6 @@ export default function Page() {
                 </div>
                 <h4>Ceremony &amp; Reception</h4>
                 <p>Both will be held at the same venue. Kindly RSVP by August 8, 2026.</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="row mt-4">
-            <div className="col-12">
-              <div className="wf-map">
-                <iframe
-                  src={MAP_SRC}
-                  title="The Birchwood Manor map"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
-              </div>
-              <div className="text-center mt-4">
-                <a href={MAP_LINK} target="_blank" rel="noopener noreferrer" className="theme-btn">
-                  <span>
-                    <i className="fas fa-location-arrow" /> Get Directions
-                  </span>
-                </a>
               </div>
             </div>
           </div>

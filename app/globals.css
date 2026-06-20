@@ -733,6 +733,15 @@ body {
   padding: 0 24px 22px;
   margin: 0;
 }
+.wf-faq-a p + ul.wf-faq-list,
+.wf-faq-a ul.wf-faq-list {
+  color: #b9b9bf;
+  margin: -10px 0 0;
+  padding: 0 24px 18px 44px;
+}
+.wf-faq-list li {
+  margin: 3px 0;
+}
 
 /* ---- Registry ---- */
 .wf-registry-card {

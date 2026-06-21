@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const EPISODES = [
   {
     n: 1,
-    title: "The Before",
+    title: "The Beginning",
     desc: "Where it all began.",
     runtime: "Coming soon",
     poster: "assets/img/wedding/couple-4.jpg",
